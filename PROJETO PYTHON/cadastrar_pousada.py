@@ -1,5 +1,3 @@
-from pousada import Pousada
-
 def cadastrar_pousada(pousadas):
     print("=== Cadastro de Pousada ===")
     try:
