@@ -5,7 +5,8 @@ from buscar_por_cidade import buscar_por_cidade
 from buscar_por_preco import buscar_por_preco
 from alugar_quarto import alugar_quarto
 
-MAX_POUSADAS = 100 
+MAX_POUSADAS = 100
+
 
 def main():
     usuarios = [Usuario("filipe", "0101"), Usuario("julio", "1010")]
@@ -19,8 +20,7 @@ def main():
         print("3. Buscar pousada por Cidade")
         print("4. Buscar pousada por Preço")
         print("5. Alugar quarto")
-        print("6. Apagar Cadastro de Pousada")
-        print("7. Deslogar")
+        print("6. Deslogar")
         print("0. Sair")
         opcao = input("Opção: ")
 
@@ -44,11 +44,6 @@ def main():
             else:
                 alugar_quarto(pousadas)
         elif opcao == "6":
-            if indice_usuario_logado == -1:
-                print("Nenhum usuário logado.")
-            else:
-                apagar_pousada(pousadas)
-        elif opcao == "7":
             if indice_usuario_logado != -1:
                 print("Logout realizado com sucesso!")
                 indice_usuario_logado = -1  # Desloga o usuário
@@ -59,6 +54,7 @@ def main():
             break
         else:
             print("Opção inválida.")
+
 
 if __name__ == "__main__":
     main()

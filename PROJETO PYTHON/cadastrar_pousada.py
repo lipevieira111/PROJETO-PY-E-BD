@@ -1,3 +1,4 @@
+
 def cadastrar_pousada(pousadas):
     print("=== Cadastro de Pousada ===")
     try:
@@ -12,3 +13,4 @@ def cadastrar_pousada(pousadas):
     pousada = Pousada(nome, diaria, cidade, quartos_disponiveis)
     pousadas.append(pousada)
     print("Pousada cadastrada com sucesso!")
+
